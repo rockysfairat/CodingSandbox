@@ -1,0 +1,181 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 83.2vw;
+    border: dotted 3px purple;
+}
+
+/* DIVs width the descriptions of the phones styling: */
+
+.phone-title {
+    display: inline-block;
+    width: 100%;
+    background-color: green;
+}
+
+.phone-info {
+    background: orange;
+    border: solid 3px red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.desc {
+    display: flex;
+    border: 4px dashed yellow;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.desc-wraper-1 {
+    display: flex;
+    border: turquoise 2px solid;
+    flex-direction: column;
+    width: 150px;
+}
+
+.desc-wraper {
+    display: flex;
+    border: turquoise 2px solid;
+    flex-direction: column;
+}
+
+h4 {
+    margin: 0;
+}
+
+table {
+    background: greenyellow;
+}
+
+td {
+    padding: 0;
+}
+
+.first-desc {
+    width: 130px;
+    color: red;
+}
+
+/* DIVs width the photographs of the phones styling: */
+
+.phone-pic {
+    background: #fff;
+    border: solid 3px green;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+img {
+    max-height: 20vw;
+}
+
+/* MAIN styling + grid positioning of all elements: */
+
+main {
+    display: grid;
+    grid-gap: 0.2vw;
+    grid-template-columns: 23vw 60vw;
+    grid-template-rows: repeat(9, minmax(10vw, auto));
+    grid-template-areas: 
+        "siemens-m55-PIC siemens-m55-INFO"
+        "motorola-v535-PIC motorola-v535-INFO"
+        "motorola-v3x-PIC motorola-v3x-INFO"
+        "nokia-1200-PIC nokia-1200-INFO"
+        "lg-p690-PIC lg-p690-INFO"
+        "nokia-x1-00-PIC nokia-x1-00-INFO"
+        "philips-w6500-PIC philips-w6500-INFO"
+        "zte-v7-lite-PIC zte-v7-lite-INFO"
+        "huawei-p20-lite-PIC huawei-p20-lite-INFO"
+    ;
+}
+
+/* Description of the phones positioning: */
+
+.siemens-m55-INFO {
+    grid-area: siemens-m55-INFO;
+}
+
+.motorola-v535-INFO {
+    grid-area: motorola-v535-INFO;
+}
+
+.motorola-v3x-INFO {
+    grid-area: motorola-v3x-INFO;
+}
+
+.nokia-1200-INFO {
+    grid-area: nokia-1200-INFO;
+}
+
+.lg-p690-INFO {
+    grid-area: lg-p690-INFO;
+}
+
+.nokia-x1-00-INFO {
+    grid-area: nokia-x1-00-INFO;
+}
+
+.philips-w6500-INFO {
+    grid-area: philips-w6500-INFO;
+}
+
+.zte-v7-lite-INFO {
+    grid-area: zte-v7-lite-INFO;
+}
+
+.huawei-p20-lite-INFO {
+    grid-area: huawei-p20-lite-INFO;
+}
+
+/* Pictures of the phones positioning: */
+
+.siemens-m55-PIC {
+    grid-area: siemens-m55-PIC;
+}
+
+.motorola-v535-PIC {
+    grid-area: motorola-v535-PIC;
+}
+
+.motorola-v3x-PIC {
+    grid-area: motorola-v3x-PIC;
+}
+
+.nokia-1200-PIC {
+    grid-area: nokia-1200-PIC;
+}
+
+.lg-p690-PIC {
+    grid-area: lg-p690-PIC;
+}
+
+.nokia-x1-00-PIC {
+    grid-area: nokia-x1-00-PIC;
+}
+
+.philips-w6500-PIC {
+    grid-area: philips-w6500-PIC;
+}
+
+.zte-v7-lite-PIC {
+    grid-area: zte-v7-lite-PIC;
+}
+
+.huawei-p20-lite-PIC {
+    grid-area: huawei-p20-lite-PIC;
+}
+
