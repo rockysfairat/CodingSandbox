@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Share+Tech+Mono&display=swap');
+
 *, ::before, ::after {
     box-sizing: border-box;
 }
@@ -6,11 +12,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: url(images/brickwall.jpg) no-repeat center fixed;
+    background-size: cover;
+    /*background-color: #043454;*/
 }
 
 header {
     width: 83.2vw;
-    border: dotted 3px purple;
 }
 
 /* DIVs width the descriptions of the phones styling: */
@@ -18,69 +26,133 @@ header {
 .phone-title {
     display: inline-block;
     width: 100%;
-    background-color: green;
 }
 
 .phone-info {
-    background: orange;
-    border: solid 3px red;
+    background: #c4b6b6;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     flex-direction: column;
+    background-image: linear-gradient(to right, #2cd2ee, #043454);
 }
 
 .desc {
     display: flex;
-    border: 4px dashed yellow;
     align-items: flex-start;
-    justify-content: flex-start;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 25px;
 }
 
 .desc-wraper-1 {
     display: flex;
-    border: turquoise 2px solid;
     flex-direction: column;
-    width: 150px;
+    width: 8vw;
 }
 
 .desc-wraper {
     display: flex;
-    border: turquoise 2px solid;
     flex-direction: column;
+}
+
+h1 {
+    font-family: Monoton, serif;
+    font-size: 65px;
+    font-weight: lighter;
+    margin-bottom: 0;
+    color: #2cd2ee;
+    text-shadow: #2cd2ee 2px 2px 9px;
+}
+
+h2 {
+    font-family: Aldrich, serif;
+    margin-top: 0;
+    margin-bottom: 45px;
+    padding-left: 3px;
+    color: #2cd2ee;
+    text-shadow: #2cd2ee 2px 2px 9px;
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+
+    border: #2cd2ee 2px solid;
+    width: 100px;
+}
+
+h3 {
+    font-family: Aldrich, serif;
+    font-size: 22px;
+    padding-left: 3px;
 }
 
 h4 {
     margin: 0;
-}
-
-table {
-    background: greenyellow;
+    font-family: Montserrat, serif;
+    font-size: 15px;
+    padding-left: 3px;
+    text-transform: uppercase;
 }
 
 td {
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .first-desc {
-    width: 130px;
-    color: red;
+    width: 120px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 
 /* DIVs width the photographs of the phones styling: */
 
 .phone-pic {
-    background: #fff;
-    border: solid 3px green;
+    background: rgba(76, 175, 80, 0);
     display: flex;
     justify-content: center;
     position: relative;
+    overflow: hidden;
+    border-radius: 15px 0 0 0;
+}
+
+.launch {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 13vw;
+    height: 6vw;
+    background: #2cd2ee;
+    position: absolute;
+    flex-wrap: wrap;
+    left: -4.5vw;
+    top: -1vw;
+    transform: rotate(-45deg);
+}
+
+.launch-txt > p {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 0.9vw;
+    font-family: Aldrich, serif;
+}
+
+.img-wraper {
+    width: 100%;
+    height: 20vw;
+    border: #2cd2ee solid 3px;
+    border-radius: 15px 30% 10%;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
-    max-height: 20vw;
+    max-height: 18vw;
 }
 
 /* MAIN styling + grid positioning of all elements: */
@@ -179,3 +251,54 @@ main {
     grid-area: huawei-p20-lite-PIC;
 }
 
+/* Title color animation: */
+
+.title-span-1 {
+    animation-name: color_change-1;
+    animation-duration: 900ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes color_change-1 {
+    0% { color: #2cd2ee; }
+    10% { color: #2cd2ee; }
+    20% { color: #043454; }
+    30% { color: #2cd2ee; }
+    40% { color: #043454; }
+    50% { color: #2cd2ee; }
+    60% { color: #2cd2ee; }
+    70% { color: #2cd2ee; }
+    80% { color: #2cd2ee; }
+    90% { color: #2cd2ee; }
+    100% { color: #2cd2ee; }
+}
+
+.title-span-2 {
+    animation-name: color_change-2;
+    animation-duration: 900ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes color_change-2 {
+    0% { color: #2cd2ee; }
+    10% { color: #2cd2ee; }
+    20% { color: #043454; }
+    30% { color: #2cd2ee; }
+    40% { color: #043454; }
+    50% { color: #2cd2ee; }
+    60% { color: #2cd2ee; }
+    70% { color: #2cd2ee; }
+    80% { color: #2cd2ee; }
+    90% { color: #2cd2ee; }
+    100% { color: #2cd2ee; }
+}
+
+
+/*
+
+#7e7474
+#c4b6b6
+
+*/
