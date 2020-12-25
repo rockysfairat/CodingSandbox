@@ -1,1 +1,7 @@
-alert('Hello again world!');
+let admin;
+
+let name = "John";
+
+admin = "John";
+
+alert(admin);
