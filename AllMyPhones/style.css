@@ -296,9 +296,32 @@ main {
 }
 
 
-/*
+@media screen and (max-width: 600px) {
 
-#7e7474
-#c4b6b6
-
-*/
+    main {
+        display: grid;
+        grid-gap: 0.2vw;
+        grid-template-columns: 23vw 60vw;
+        grid-template-rows: repeat(9, minmax(10vw, auto));
+        grid-template-areas: 
+            "siemens-m55-PIC"
+            "siemens-m55-INFO"
+            "motorola-v535-PIC"
+            "motorola-v535-INFO"
+            "motorola-v3x-PIC"
+            "motorola-v3x-INFO"
+            "nokia-1200-PIC"
+            "nokia-1200-INFO"
+            "lg-p690-PIC"
+            "lg-p690-INFO"
+            "nokia-x1-00-PIC"
+            "nokia-x1-00-INFO"
+            "philips-w6500-PIC"
+            "philips-w6500-INFO"
+            "zte-v7-lite-PIC"
+            "zte-v7-lite-INFO"
+            "huawei-p20-lite-PIC"
+            "huawei-p20-lite-INFO"
+        ;
+    }
+}
