@@ -1,7 +1,3 @@
-let admin;
+let name1 = prompt('What is your name?', ['Type something in here']);
 
-let name = "John";
-
-admin = "John";
-
-alert(admin);
+alert(`Your name is ${name1}`);
