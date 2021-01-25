@@ -1,0 +1,115 @@
+/* Fonts: */
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Nanum+Pen+Script&family=Sacramento&family=Tangerine:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Sacramento&family=Tangerine:wght@700&display=swap');
+
+/* Global attributes: */
+
+body {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 4vw;
+    font-family: 'Nanum Pen Script', Arial, Helvetica, sans-serif;
+    margin: 1.4vw 0 1.4vw 0;
+}
+
+/* Big Div for all the portraits: */
+
+.portraits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Properties for all Portrait divs: */
+
+.newtonPortrait, .einsteinPortrait, .keplerPortrait {
+    width: 30%;
+    position: relative;
+    margin: 0 1% 0 1%;
+}
+
+.newtonPortrait:after, .einsteinPortrait:after,
+.keplerPortrait:after {
+    display: block;
+    position: absolute;
+    color: #fff;
+    font-size: 2.5vw;
+    font-family: Allura, Arial, serif;
+    left: 20%;
+}
+
+/* Newton block: */
+
+.newtonPortrait {
+    background-image: url("portraits/StaticNewton.jpg");
+}
+
+.newtonPortrait:hover {
+    background-image: url("portraits/AnimatedNewton.gif");
+}
+
+.newtonPortrait, .newtonPortrait:hover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 67%;
+}
+
+.newtonPortrait:after {
+    content: 'Isaac Newton';
+}
+
+/* Einstein block: */
+
+.einsteinPortrait {
+    background-image: url("portraits/StaticEinstein.jpg");
+}
+
+.einsteinPortrait:hover {
+    background-image: url("portraits/AnimatedEinstein.gif");
+}
+
+.einsteinPortrait, .einsteinPortrait:hover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 67%;
+}
+
+.einsteinPortrait:after {
+    content: 'Albert Einstein';
+}
+
+/* Kepler block: */
+
+.keplerPortrait {
+    background-image: url("portraits/StaticKepler.jpg");
+}
+
+.keplerPortrait:hover {
+    background-image: url("portraits/AnimatedKepler.gif");
+}
+
+.keplerPortrait, .keplerPortrait:hover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 67%;
+}
+
+.keplerPortrait:after {
+    content: 'Johannes Kepler';
+}
+
+/* Frame PNG properties: */
+
+.frame  {
+    width: 100%;
+    height: auto;
+}
+
