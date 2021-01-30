@@ -1,10 +1,12 @@
-/* Fonts: */
+/* FONTS: */
 
+/* This is the font for <h1>: */
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Nanum+Pen+Script&family=Sacramento&family=Tangerine:wght@700&display=swap');
 
+/* This is the font for ::after elements of portraits: */
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Sacramento&family=Tangerine:wght@700&display=swap');
 
-/* Global attributes: */
+/* GLOBAL ATTRIBUTES: */
 
 body {
     background-color: #000;
@@ -20,8 +22,9 @@ h1 {
     margin: 1.4vw 0 1.4vw 0;
 }
 
-/* Big Div for all the portraits: */
+/* DIVS WITH PORTRAITS: */
 
+/* In this container we have 3 divs with portraits: */
 .portraits {
     display: flex;
     align-items: center;
@@ -29,13 +32,13 @@ h1 {
 }
 
 /* Properties for all Portrait divs: */
-
 .newtonPortrait, .einsteinPortrait, .keplerPortrait {
     width: 30%;
     position: relative;
     margin: 0 1% 0 1%;
 }
 
+/* The scientists names styling: */
 .newtonPortrait:after, .einsteinPortrait:after,
 .keplerPortrait:after {
     display: block;
@@ -46,12 +49,14 @@ h1 {
     left: 20%;
 }
 
-/* Newton block: */
+/* NEWTON'S PORTRAIT: */
 
+/* Static black and white portrait: */
 .newtonPortrait {
     background-image: url("portraits/StaticNewton.jpg");
 }
 
+/* Animated colorful portrait: */
 .newtonPortrait:hover {
     background-image: url("portraits/AnimatedNewton.gif");
 }
@@ -62,16 +67,20 @@ h1 {
     background-size: 67%;
 }
 
+/* Scientists names applied via ::after elements
+in all portrait divs: */
 .newtonPortrait:after {
     content: 'Isaac Newton';
 }
 
-/* Einstein block: */
+/* EINSTEIN'S PORTRAIT: */
 
+/* Static black and white portrait: */
 .einsteinPortrait {
     background-image: url("portraits/StaticEinstein.jpg");
 }
 
+/* Animated colorful portrait: */
 .einsteinPortrait:hover {
     background-image: url("portraits/AnimatedEinstein.gif");
 }
@@ -82,16 +91,20 @@ h1 {
     background-size: 67%;
 }
 
+/* Scientists names applied via ::after elements
+in all portrait divs: */
 .einsteinPortrait:after {
     content: 'Albert Einstein';
 }
 
-/* Kepler block: */
+/* KEPLER'S PORTRAIT: */
 
+/* Static black and white portrait: */
 .keplerPortrait {
     background-image: url("portraits/StaticKepler.jpg");
 }
 
+/* Animated colorful portrait: */
 .keplerPortrait:hover {
     background-image: url("portraits/AnimatedKepler.gif");
 }
@@ -102,11 +115,13 @@ h1 {
     background-size: 67%;
 }
 
+/* Scientists names applied via ::after elements
+in all portrait divs: */
 .keplerPortrait:after {
     content: 'Johannes Kepler';
 }
 
-/* Frame PNG properties: */
+/* THE PORTRAIT FRAMES PNG PROPERTIES: */
 
 .frame  {
     width: 100%;
