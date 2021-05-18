@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#value {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.btn {
+    border: 3px black solid;
+    padding: 10px;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
