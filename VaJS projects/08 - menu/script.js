@@ -83,27 +83,25 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // filter items:
-filterBtns.forEach( (btn) => {
-  btn.addEventListener('click', (e) => {
-    const categoryItemDataset = e.currentTarget.dataset.id;
-    const menuCategory = menu.filter( (menuItem) => {
-      if (menuItem.category === categoryItemDataset) {
+filterBtns.forEach(function(btn){
+  btn.addEventListener('click', function(e) {
+    const category = e.currentTarget.dataset.id;
+    const menuCategory = menu.filter(function(menuItem) {
+      if (menuItem.category === category) {
         return menuItem;
       }
     });
     // console.log(menuCategory);
-    if (categoryItemDataset === 'all') {
-      console.log(menu);
+    if (category === 'all') {
       displayMenuItems(menu);
     } else {
-      console.log(menuCategory);
       displayMenuItems(menuCategory);
     }
   });
 });
 
-const displayMenuItems = (menuItems) => {
-  let displayMenu = menu.map( (item) => {
+function displayMenuItems(menuItems) {
+  let displayMenu = menu.map((item) => {
     return `<article class="menu-item">
     <img src=${item.img} alt=${item.title} class="photo">
     <div class="item-info">
