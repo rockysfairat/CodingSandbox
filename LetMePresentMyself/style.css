@@ -1,0 +1,233 @@
+/* fonts */
+
+/* header */
+    @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+/* text */
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root {
+/* text colors */
+    --text-color: #ebfffd;
+    --title-and-navigation-color: #2cd2ee;
+    --title-and-navigation-text-shadow: var(--title-and-navigation-color) 2px 2px 12px;
+/* background-colors */
+    --default-bg: #282C34;
+}
+
+/* body */
+body {
+    background-color: var(--default-bg);
+    color: var(--text-color);
+    font-family: 'Ubuntu', Courier, monospace;
+    font-size: 20px;
+}
+
+/* navigation and header */
+header {
+    background-color: var(--default-bg);
+}
+
+h1 {
+    color: var(--title-and-navigation-color);
+    text-shadow: var(--title-and-navigation-text-shadow);
+    width: 100%;
+    font-family: "Monoton", Courier, monospace;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    grid-gap: 3vw;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    color: var(--title-and-navigation-color);
+    cursor: pointer;
+}
+
+li:hover {
+    text-shadow: var(--title-and-navigation-text-shadow);
+}
+
+/* property that keeps containers out of the screen by default */
+.container {
+    display: none;
+}
+
+/* About me */
+.about-me-container {
+    
+}
+
+/* My projects */
+.my-projects-container {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4vw;
+}
+
+.project {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1vw;
+}
+
+.project-image {
+    width: 30%;
+}
+
+.project-image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.project-title {
+    margin-top: 0;
+    display: block;
+}
+
+.project-desc {
+    width: 60%;
+}
+
+/* My skills */
+.my-skills-container {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 0 3vw 0 3vw;
+}
+
+.skill-catalogization-section {
+    width: 100%;
+    display: flex;
+    flex-flow: inherit;
+    margin-bottom: 2vw;
+}
+
+h2 {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+h3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    margin: 1vw 0 0 0;
+    font-size: 22px;;
+}
+
+.skill-container {
+    margin: 2vw 1vw 1vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skill-container > svg {
+    width: 100px;
+}
+
+.skill-container > img {
+    width: 100px;
+}
+
+/* Display class to hide/show containers */
+.display-show {
+    display: flex;
+}
+
+/* Title animation: */
+
+.title-span-1 {
+    animation-name: color_change-1;
+    animation-duration: 900ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes color_change-1 {
+    0% { color: var(--title-and-navigation-color);; }
+    10% { color: var(--title-and-navigation-color); }
+    20% { color: #043454; }
+    30% { color: var(--title-and-navigation-color); }
+    40% { color: #043454; }
+    50% { color: var(--title-and-navigation-color); }
+    60% { color: var(--title-and-navigation-color); }
+    70% { color: var(--title-and-navigation-color); }
+    80% { color: var(--title-and-navigation-color); }
+    90% { color: var(--title-and-navigation-color); }
+    100% { color: var(--title-and-navigation-color); }
+}
+
+.title-span-2 {
+    animation-name: color_change-2;
+    animation-duration: 900ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes color_change-2 {
+    0% { color: var(--title-and-navigation-color); }
+    10% { color: var(--title-and-navigation-color); }
+    20% { color: #043454; }
+    30% { color: var(--title-and-navigation-color); }
+    40% { color: #043454; }
+    50% { color: var(--title-and-navigation-color); }
+    60% { color: var(--title-and-navigation-color); }
+    70% { color: var(--title-and-navigation-color); }
+    80% { color: var(--title-and-navigation-color); }
+    90% { color: var(--title-and-navigation-color); }
+    100% { color: var(--title-and-navigation-color); }
+}
+
+/* media queries */
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    .project {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 1vw;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    .project-title {
+        width: 100%;
+        display: block;
+        margin: 5px 0 5px 0;
+    }
+
+    .project-desc {
+        width: 100%;
+    }
+
+    .project-desc > p {
+        margin-top: 0;
+    }
+}
